@@ -5,6 +5,7 @@
         "rootDir": ".",
         "module": "ESNext",
         "moduleResolution": "Bundler",
+        "target": "es2022",
         "types": [
             "node",
             "jest"
@@ -12,8 +13,8 @@
     },
     "ts-node": {
         "experimentalSpecifierResolution": "node",
-        "transpileOnly": true,
-        "esm": true,
+        "transpileOnly": false,
+        "esm": true
     },
     "include": [
         "src",
