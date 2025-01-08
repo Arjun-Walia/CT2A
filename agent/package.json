@@ -4,8 +4,8 @@
     "main": "src/index.ts",
     "type": "module",
     "scripts": {
-        "start": "node --loader ts-node/esm src/index.ts",
-        "dev": "node --loader ts-node/esm src/index.ts",
+        "start": "node --loader ts-node/esm src/index.ts --isRoot",
+        "dev": "node --loader ts-node/esm src/index.ts --isRoot",
         "check-types": "tsc --noEmit",
         "test": "jest"
     },
@@ -15,7 +15,7 @@
             "../core/dist"
         ],
         "ext": "ts,json",
-        "exec": "node --enable-source-maps --loader ts-node/esm src/index.ts"
+        "exec": "node --enable-source-maps --loader ts-node/esm src/index.ts --isRoot"
     },
     "dependencies": {
         "@elizaos/adapter-postgres": "workspace:*",
