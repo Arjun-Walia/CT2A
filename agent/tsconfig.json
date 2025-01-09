@@ -1,0 +1,23 @@
+{
+    "extends": "../packages/core/tsconfig.json",
+    "compilerOptions": {
+        "outDir": "dist",
+        "rootDir": ".",
+        "module": "ESNext",
+        "moduleResolution": "Bundler",
+        "target": "es2022",
+        "types": [
+            "node",
+            "jest"
+        ]
+    },
+    "ts-node": {
+        "experimentalSpecifierResolution": "node",
+        "transpileOnly": false,
+        "esm": true
+    },
+    "include": [
+        "src",
+        "mainCharacter.ts"
+    ]
+}

@@ -1,0 +1,7 @@
+!index.ts
+!character.ts
+.env
+*.env
+.env*
+/data
+/generatedImages
