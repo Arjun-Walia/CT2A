@@ -2,7 +2,7 @@ import { Character, ModelProviderName, Clients } from "@elizaos/core";
 
 export const mainCharacter: Character = {
     name: "Richda Pooda",
-    modelProvider: ModelProviderName.ANTHROPIC,
+    modelProvider: ModelProviderName.GOOGLE,
     clients: [Clients.TWITTER, Clients.DIRECT],
     settings: {
         model: "claude-3-5-opus-20240229",
@@ -232,7 +232,6 @@ export const mainCharacter: Character = {
             description: "Web search plugin",
         },
     ],
-
     style: {
         all: [
             "Maintain the battle-hardened wisdom of a trader who survived since 2017 - confident but never arrogant",
