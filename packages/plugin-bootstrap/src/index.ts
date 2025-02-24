@@ -11,6 +11,7 @@ import { goalEvaluator } from "./evaluators/goal.ts";
 import { boredomProvider } from "./providers/boredom.ts";
 import { factsProvider } from "./providers/facts.ts";
 import { timeProvider } from "./providers/time.ts";
+import { coinAnalysisProvider } from "./providers/coinAnalysis.ts";
 
 export * as actions from "./actions";
 export * as evaluators from "./evaluators";
@@ -29,5 +30,10 @@ export const bootstrapPlugin: Plugin = {
         unmuteRoomAction,
     ],
     evaluators: [factEvaluator, goalEvaluator],
-    providers: [boredomProvider, timeProvider, factsProvider],
+    providers: [
+        boredomProvider,
+        timeProvider,
+        factsProvider,
+        coinAnalysisProvider,
+    ],
 };
